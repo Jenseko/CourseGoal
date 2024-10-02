@@ -5,7 +5,7 @@ import { type PropsWithChildren } from "react";
 //   children: ReactNode;
 // };
 
-type CourseGoalProps = PropsWithChildren<{title: string}>
+type CourseGoalProps = PropsWithChildren<{title: string}>;
 
 export default function CourseGoal({ title, children }: CourseGoalProps) {
   return (
@@ -20,3 +20,24 @@ export default function CourseGoal({ title, children }: CourseGoalProps) {
     </article>
   );
 }
+
+
+
+// FC = functional component, a generic type
+// const CourseGoal: FC<CourseGoalProps> = ({title, children}) => {
+//   return (
+//     <article>
+//     <div>
+//       <h2>
+//         {title}
+//       </h2>
+//       {children}
+//     </div>
+//     <button>Delete</button>
+//   </article>
+//   )
+// }
+// when using the declaration with const then is a new export statement of this function needed
+// export default CourseGoal;
+
+
