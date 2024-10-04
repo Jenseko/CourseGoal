@@ -26,7 +26,6 @@ export default function CourseGoal({ title, children, onDelete, id }: CourseGoal
 }
 
 
-
 // FC = functional component, a generic type
 // const CourseGoal: FC<CourseGoalProps> = ({title, children}) => {
 //   return (
