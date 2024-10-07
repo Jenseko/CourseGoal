@@ -5,12 +5,6 @@ import Header from "./components/Header.tsx";
 import goalsImg from "./assets/goals.jpg";
 import NewGoal from "./components/NewGoal.tsx";
 
-export type CourseGoal = {
-  title: string;
-  description: string;
-  id: number;
-};
-
 export default function App() {
   // use state hook with special syntax
   const [goals, setGoals] = useState<CourseGoal[]>([]);
